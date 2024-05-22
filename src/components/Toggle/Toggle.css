@@ -1,0 +1,26 @@
+@import "../../vars.css";
+
+.toggle-container { 
+  margin-top: -14px;
+  z-index: 999;
+  width: 100%;
+  position: sticky;
+  top: 93%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.toggle-button {
+  background-color: var(--toggle-color);
+  border-radius: 50%;
+  padding: 2px 2px;
+  width: 2.3%;
+  margin-right: 18px;
+  box-shadow: var(--toggle-shadow);
+}
+
+@media screen and (max-width: 840px) {
+  .toggle-button {
+    width: 5.5%;
+  }
+}

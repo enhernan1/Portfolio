@@ -1,23 +1,29 @@
-import logo from './logo.svg';
 import './App.css';
+import './vars.css';
+import useLocalStorage from "use-local-storage";
+import { Hero } from './components/Hero/Hero';
+import { Navbar } from './components/Navbar/Navbar';
+import { About } from './components/About/About.jsx'
+import { Experience } from './components/Experience/Experience.jsx';
+import { Projects } from './components/Projects/Projects.jsx';
+import { Contact } from './components/Contact/Contact.jsx';
+import { Toggle } from './components/Toggle/Toogle.jsx';
+// import { useState } from 'react';
 
 function App() {
+  const [isDark, setIsDark] = useLocalStorage("isDark", false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={"App"} data-theme={isDark ? "dark" : "light"}>
+      <Navbar/>
+      <Toggle isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
+      <div className="content-container">
+        <Hero/>
+        <About />
+        <Experience />
+        <Projects/>
+        <Contact/>
+      </div>
     </div>
   );
 }

@@ -1,0 +1,38 @@
+[
+  {
+    "role": "Sporting Goods Associate",
+    "organization": "Walmart Inc",
+    "startDate": "July 2023",
+    "endDate": "Present",
+    "experiences":
+    [
+      "Managed inventory.", 
+      "Proficiently sold hunting licenses, ammunition, and sporting goods equipment."
+    ],
+    "imageSrc": "/history/walmart.png"
+  },
+  {
+    "role": "Carpet Cutter",
+    "organization": "Keystone RV",
+    "startDate": "May 2022",
+    "endDate": "September 2022",
+    "experiences": 
+    [
+      "Efficiently executed carpet cutting for RV interiors.", 
+      "Enhanced carpet production efficiency."
+    ],
+    "imageSrc": "/history/keystone.png"
+  },
+  {
+    "role": "Shipt Shopper",
+    "organization": "Shipt",
+    "startDate": "January 2021",
+    "endDate": "May 2023",
+    "experiences": 
+    [
+      "Managed 300+ customer orders in-person and by phone, maintaining a 99% on-time delivery rate.", 
+      "Effectively communicated with diverse customers to ensure accurate grocery orders."
+    ],
+    "imageSrc": "/history/shipt.png"
+  }
+]

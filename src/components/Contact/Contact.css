@@ -73,7 +73,13 @@
   }
 
   .contact-link a {
-    font-size: medium;
+    font-size: 12px;
+  }
+
+  .contact-text h2 {
+    font-size: 60px;
+    font-weight: 700;
+    letter-spacing: 4px;
   }
   
 }

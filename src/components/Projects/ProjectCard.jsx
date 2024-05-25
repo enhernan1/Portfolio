@@ -27,7 +27,7 @@ export const ProjectCard = ({project: {title, imageSrc, description, skills, dem
       </ul>
       <div className="project-card-links">
         <a href={demo} target="_blank" rel="noopener noreferrer" className="project-card-link">Demo</a>
-        <a href={source} target="_blank" rel="noopener noreferrer" className="project-card-link">Source</a>
+        {/* <a href={source} target="_blank" rel="noopener noreferrer" className="project-card-link">Source</a> */}
       </div>
     </div>
   );

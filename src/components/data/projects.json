@@ -4,15 +4,13 @@
     "imageSrc": "projects/libr.png",
     "description": "A Monroe County digital libray where you can find your perfect book.",
     "skills": ["React", "MongoDB", "Node", "Express"],
-    "demo": "https://library-prototype-api1.onrender.com/",
-    "source": "https://github.com/enhernan1/FA23_Project_Clone"
+    "demo": "https://library-prototype-api1.onrender.com/"
   },
   {
     "title": "Sorting Visualizer",
     "imageSrc": "projects/sortingVisualizer.png",
     "description": "Visualize some of the most popular sorting algorithms with this website.",
     "skills": ["React", "Express", "Node"],
-    "demo": "https://sorting-method-visualizer.netlify.app/ ",
-    "source": "https://github.com/enhernan1/SortingVisualizer"
+    "demo": "https://sorting-method-visualizer.netlify.app/ "
   }
 ]

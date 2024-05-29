@@ -2,12 +2,11 @@
 
 .App {
   background-color: var(--color-bg);
-  width: 100%;
   height: 100%;
-  /* overflow: hidden; */
+  width: 100%;
   transition: background-color 0.25s ease-in-out;
 }
 
 .content-container {
-  overflow: hidden; /* Hide overflow for content */
+  overflow: hidden;
 }

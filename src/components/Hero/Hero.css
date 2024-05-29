@@ -1,6 +1,7 @@
 @import "../../vars.css";
 
 .container {
+  max-width: 100%;
   position: relative;
   display: flex;
   align-items: center;
@@ -80,35 +81,8 @@
   }
 }
 
-.top-blur {
-  position: absolute;
-  width: 50vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 350px;
-  top: -128px;
-  left: -10vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
 
-.bottom-blur {
-  position: absolute;
-  width: 70vw;
-  height: 50vw;
-  min-width: 350px;
-  min-width: 250px;
-  top: 346px;
-  right: -25vw;
-  border-radius: 764px;
-  background: rgba(25, 55, 109, 0.7);
-  filter: blur(100px);
-  z-index: 0;
-}
-
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 734px) {
   .container {
     flex-direction: column-reverse;
   }
@@ -116,7 +90,7 @@
     align-items: center;
   }
   .hero-image {
-    height: 255px;
-    width: 245px;
+    width: 40%;
+    height: 45%;
   }
 }

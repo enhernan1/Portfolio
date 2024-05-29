@@ -27,7 +27,7 @@ export const Navbar = () => {
   
   return (
     <nav className="navbar" id="navbar">
-      <a className="title" href="/">Portfolio</a>
+      <a className="title" href="/">Enrique Hernandez</a>
       <div className="menu">
         <img className="menu-buton" src={menuOpen ? getImageUrl("/nav/closeIcon.png") : getImageUrl("/nav/menuIcon.png")} alt="menu-button" onClick={() => setMenuOpen(!menuOpen)}/>
         <ul 

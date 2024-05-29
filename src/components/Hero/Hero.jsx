@@ -9,7 +9,5 @@ export const Hero = () => {
       <a href="mailto:enrinandez102@gmail.com" className='contact-btn'>Contact Me</a>
     </div>
     <img src={getImageUrl("/hero/head_pic.png")} alt='my-hero' className='hero-image'/>
-    {/* <div className='top-blur'/>
-    <div className='bottom-blur'/> */}
   </section>
 };

@@ -1,6 +1,7 @@
 @import "../../vars.css";
 
 .toggle-container { 
+  max-width: 100%;
   margin-top: -14px;
   z-index: 999;
   width: 100%;

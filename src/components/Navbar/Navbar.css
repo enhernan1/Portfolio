@@ -8,18 +8,17 @@
   justify-content: space-between;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 6%;
-  padding-right: 6%;
+  padding-left: 10%;
+  padding-right: 10%;
   z-index: 1000;
   width: 100%;
-
   background: rgb(25, 25, 25);
   top: 0;
 }
 
 .title {
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none;
   color: #FFFEFE;
 
@@ -39,7 +38,17 @@
   font-size: 25px;
   color: #FFFEFE;
   text-decoration: none;
+  /* color: black;
+  text-decoration: none;
+  text-decoration-color: white; */
 }
+
+/* .menu-items a:hover {
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
+} */
 
 .menu img {
   display: none;
@@ -92,5 +101,6 @@
   .menu-open {
     right: 0; 
   }
+
 
 }

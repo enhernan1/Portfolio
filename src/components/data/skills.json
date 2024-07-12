@@ -1,34 +1,51 @@
 [
-  {
-    "title": "HTML",
-    "imageSrc": "skills/html.png"
-  },
-  {
-    "title": "CSS",
-    "imageSrc": "skills/css.png"
-  },
-  {
-    "title": "React",
-    "imageSrc": "skills/react.png"
-  },
-  {
-    "title": "Node",
-    "imageSrc": "skills/node.png"
-  },
-  {
-    "title": "MongoDB",
-    "imageSrc": "skills/mongodb.png"
-  },
-  {
-    "title": "Python",
-    "imageSrc": "skills/python.png"
-  },
-  {
-    "title": "C",
-    "imageSrc": "skills/c.png"
-  },
-  {
-    "title": "C++",
-    "imageSrc": "skills/cPlusPlus.png"
-  }
+  [
+    {
+      "title": "HTML",
+      "level": "experienced"
+    },
+    {
+      "title": "CSS",
+      "level": "experienced"
+    },
+    {
+      "title": "JavaScript",
+      "level": "experienced"
+    },
+    {
+      "title": "React Js",
+      "level": "experienced"
+    },
+    {
+      "title": "Bootstrap",
+      "level": "experienced"
+    }
+  ],
+  [
+    {
+      "title": "Python",
+      "level": "experienced"
+    },
+    {
+      "title": "Node Js",
+      "level": "experienced"
+    },
+    {
+      "title": "MySQL",
+      "level": "experienced"
+    },
+    {
+      "title": "Express Js",
+      "level": "experienced"
+    },
+    {
+      "title": "Java",
+      "level": "experienced"
+    },
+    {
+      "title": "MongoDB",
+      "level": "experienced"
+    }
+  ]
+  
 ]

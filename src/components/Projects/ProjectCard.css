@@ -1,25 +1,24 @@
 @import "../../vars.css";
 
-.project-card-container {
+.project-card {
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
-  background: linear-gradient(180deg, var(--color-primary) 0%, var(--color-bg) 100%);
-  box-shadow: 0 16px 14px 0 rgb(37, 37, 37, 0.6);
+  border-radius: 15px;
+  border: 1px solid #ccc;
   padding: 18px 24px;
   max-width: 345px;
-  
 }
 
-.project-card-img {
+.project-card__img {
   margin-bottom: 26px;
   height: 180px;
   border-radius: 10px;
 }
 
-.project-card-title {
-  font-size: 25px;
+.project-card__title {
+  font-size: 1.2rem;
   font-weight: 700;
+  max-width: 45ch;
 }
  
 .project-card-description {
@@ -28,47 +27,53 @@
   font-weight: 400;
 }
 
-.project-card-skills {
-  width: 100%;
-  margin-top: 14px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 6px;
+.project-card__skills {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
   list-style: none;
 }
 
-.project-card-skill {
-  font-size: 25px;
-  font-weight: 400;
-  border-radius: 100px;
-  background: var(--color-primary);
-  padding: 2px 22px;
-  color: #F9FAFB;
+.project-card__skill-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.projects__checkmark-img {
+  width: 1.2rem;
+  height: 1.2rem; 
+  color: #FDC435;
+  margin: 0 1rem 0 0;
 }
 
-.project-card-links {
+.project-card__skill {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--color-subtext);
+}
+
+.project-card__links {
   width: 100%;
-  margin-top: 26px;
+  margin-top: 1rem;
   display: flex;
   justify-content: flex-start;
 }
 
-.project-card-link {
+.project-card__link {
   text-decoration: none;
-  color: #F9FAFB;
-  font-size: 30px;
+  /* color: #F9FAFB; */
+  color: var(--color-text);
+  border: 1px solid #ccc;
+  font-size: 1.2rem;
   font-weight: 600;
   border-radius: 100px;
-  background: var(--color-dark);
-  padding: 2px 35px
+  background: var(--color-bg);
+  padding: 0 1.7rem;
 }
 
-.see-more-link {
-  color: var(--color-text);
-  cursor: pointer;
-}
-
-.see-more-link:hover {
-  text-decoration: underline;
+.project-card__link:hover {
+  color: var(--color-comp-text) ;
+  background-color: var(--color-comp-bg) ;
+  transition: all 0.3s;
 }

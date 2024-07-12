@@ -7,22 +7,24 @@ import { About } from './components/About/About.jsx'
 import { Experience } from './components/Experience/Experience.jsx';
 import { Projects } from './components/Projects/Projects.jsx';
 import { Contact } from './components/Contact/Contact.jsx';
-import { Toggle } from './components/Toggle/Toogle.jsx';
-// import { useState } from 'react';
+import { Skills } from './components/Skills/Skills.jsx';
+import { Footer } from './components/Footer/Footer.jsx';
 
 function App() {
   const [isDark, setIsDark] = useLocalStorage("isDark", false);
 
   return (
     <div className={"App"} data-theme={isDark ? "dark" : "light"}>
-      <Navbar/>
-      <Toggle isChecked={isDark} handleChange={() => setIsDark(!isDark)} />
+      {/* <Navbar isDark={isDark} setIsDark={setIsDark}/> */}
+      <Navbar isDark={isDark} setIsDark={setIsDark}/>
       <div className="content-container">
         <Hero/>
         <About />
+        <Skills />
         <Experience />
         <Projects/>
         <Contact/>
+        <Footer/>
       </div>
     </div>
   );

@@ -1,56 +1,160 @@
 @import "../../vars.css";
 
-.contact-container {
-  color: var(--color-text);
-  margin-top: 120px;
-  max-width: 100%;
-  background-color: var(--color-secondary);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  padding: 58px 10%;
-  gap: 10px;
-}
-
-.contact-text {
-  color: #FFFEFE;
-}
-
-.contact-text h2 {
-  font-size: 80px;
-  font-weight: 700;
-  letter-spacing: 4px;
-}
-
-.contact-links {
+.contact {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  list-style: none;
-  gap: 20px;
-}
-
-.contact-link {
-  display: flex;
+  justify-content: center;
   align-items: center;
-  gap: 25px;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  color: var(--color-text);
+  /* border: 1px solid red; */
 }
 
-.contact-link a {
-  color: #FFFEFE;
+.contact__title{
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+}
+
+.contact__subtitle {
+  text-align: center;
+  color: var(--color-subtext);
+}
+
+.contact__links {
+  margin-top: 2rem;
+  width: 65%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 25px;
+  list-style: none;
+}
+
+.contact__link {
+  margin: 0.9rem 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  /* border: 1px solid red; */
+}
+
+.contact__link a {
   text-decoration: none;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 1.5px;
+  font-size: 0.9rem;
+  color: var(--color-text);
 }
 
-.contact-links img{
-  height: 50px;
-  width: 50px;
+.contact__link img {
+  height: 2rem;
+  width: 2rem;
+  margin: 0 0.5rem;
+  color: var(--color-text);
+}
+.contact__mail-icn {
+  height: 1.7rem;
+  width: 1.7rem;
+  margin: 0 0.5rem;
+  color: var(--color-text);
 }
 
-@media screen and (max-width: 734px) {
+.contact__linkedin-icn {
+  height: 1.7rem;
+  width: 1.7rem;
+  margin: 0 0.5rem;
+  color: var(--color-text);
+}
+
+.contact__github-icn {
+  height: 1.7rem;
+  width: 1.7rem;
+  margin: 0 0.5rem;
+  color: var(--color-text);
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .contact__title {
+    font-size: 2.5rem;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+
+  .contact__title {
+    font-size: 2rem;
+  }
+
+  .contact__links {
+    width: 85%;
+  }
+
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 1475px;
+  }
+
+  .contact__github-icn {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .contact__mail-icn {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  .contact__linkedin-icn {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+  
+  .contact {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+}
+
+
+/* @media screen and (max-width: 734px) {
 
   .contact-container{
     flex-direction: column;
@@ -82,4 +186,4 @@
     letter-spacing: 4px;
   }
   
-}
+} */

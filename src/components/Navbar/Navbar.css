@@ -1,106 +1,193 @@
 @import "../../vars.css";
 
-.navbar {
-  max-width: 100%;
+.navbar-box {
   position: sticky;
+  z-index: 999;
+  top: 0;
+  background-color: var(--color-bg);
+  transition: box-shadow 0.3s ease;
+  transition: background-color 0.25s ease-in-out;
+}
+.navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 10%;
-  padding-right: 10%;
-  z-index: 1000;
-  width: 100%;
-  background: rgb(25, 25, 25);
-  top: 0;
+  padding: 1rem 0;
 }
 
-.title {
-  font-size: 30px;
-  font-weight: 500;
+.navbar-box.scrolled {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.navbar__title {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
   text-decoration: none;
-  color: #FFFEFE;
-
+  letter-spacing: -0.02em;
+  color: var(--color-text);
+  display: flex;
+  flex: 1;
 }
 
-.menu {
-  display: flex;
+.navbar__title:hover {
+  cursor: default;
 }
 
-.menu-items {
+.navbar__menu {
   display: flex;
-  gap: 47px;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.navbar__menu-items {
+  display: flex;
+  gap: 1rem;
   list-style: none;
 }
 
-.menu-items a {
-  font-size: 25px;
-  color: #FFFEFE;
+.navbar__menu-items a {
+  color: var(--color-text);
+  font-size: 1.2rem;
   text-decoration: none;
-  /* color: black;
-  text-decoration: none;
-  text-decoration-color: white; */
+  text-decoration-color: white;
 }
 
-/* .menu-items a:hover {
+.navbar__menu-items a:hover {
   color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
   text-decoration-color: rgb(181, 181, 181);
-} */
+}
 
-.menu img {
+.navbar__menu-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.navbar__menu-button {
   display: none;
+  width: 2.3rem;
+  height: 2.3rem;
+  color: var(--color-text);
+  z-index: 1001;
+}
+
+.navbar__menu-button:hover {
+  cursor: pointer;
+}
+
+.toggle {
+ width: 5%;
+ display: flex;
+ justify-content: center;
 }
 
 
-@media screen and (max-width: 734px) {
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .navbar__title {
+    font-size: 1.2rem;
+  }
+
+  .navbar__menu-items li a{
+    font-size: 1rem;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
 
   .navbar {
-    position: sticky;
-    top: 0;
-    flex-direction: column;
-    align-items: flex-start;
+    padding-inline: 1rem;
   }
 
-  .menu {
-    position: absolute;
-    right: 0;
-    margin-right: 10%;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 11px;
-    z-index: 3;
+  .navbar__title {
+    font-size: 1.1rem;
   }
 
-
-  .menu img {
-    display: block;
-    cursor: pointer;
+  .navbar__menu-items {
+    display: none;
   }
 
-  .menu-items {
-    display: hidden;
+  .navbar__menu-button {
+    display: flex ;
+  }
+
+  .navbar__menu-items {
+
+    display: flex;
+    color: #fff;
     flex-direction: column;
     align-items: flex-start;
     margin-top: 2px;
-    width: 300px;
+    width: 40%;
     height: 100vh;
     gap: 13px;
     background: #252525;
     padding: 24px 33px;
-    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
     position: fixed;
-    top: 66px;
-    right: -300px;
-    transition: right 1s ease-in-out; /* Transition only right property */
+    top: 4.1rem;
+    right: -40%;
+    transition: right 1s ease-in-out;
     z-index: 1;
   }
 
-  .menu-open {
-    right: 0; 
+  .navbar__menu-items li a {
+    color: #fff;
   }
 
+  .navbar__menu-open {
+    right: 0;
+  }
 
+  
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 1475px;
+  }
+
+  .navbar__menu-items {
+    width: 40%;
+    top: 4.2rem;
+  }
+  
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+
+  .navbar__title {
+    font-size: 1rem;
+  }
 }

@@ -1,0 +1,39 @@
+@import "../../vars.css";
+
+.footer__text-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer__title {
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-subtext);
+}
+
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 1475px;
+  }
+
+  .footer__title {
+    text-align: center;
+    max-width: 32ch;
+  }
+
+  .footer__text-holder {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}

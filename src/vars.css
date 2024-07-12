@@ -1,10 +1,14 @@
 :root{
   /* Light mode Colors */
   --color-text: #252525;
+  --color-subtext: #656565;
+  --color-comp-text: #FFFEFE;
+  --color-comp-bg: #252525;
   --color-primary: #7A8C99 ;
   --color-secondary: #7A8C99 ;
   --color-dark: #333333;
-  --color-bg: #fefefe;
+  --color-bg: #fff;
+  --color-sec: #fefefe;
   --my-name: linear-gradient(90deg, rgba(37, 37, 37, 1) 70%, rgba(37, 37, 37, 0) 120%);
   --toggle-shadow: 0 6px 6px 0 rgb(37, 37, 37, 0.6);
   --toggle-color: #ebebeb;
@@ -16,10 +20,14 @@
 
 [data-theme="dark"] {
   --color-text: #FFFEFE;
+  --color-subtext: #ccc;
+  --color-comp-text: #252525;
+  --color-comp-bg: #FFFEFE;
   --color-primary: #425664;
   --color-secondary: #425664;
   --color-dark: #333333;
   --color-bg: #252525;
+  --color-sec: #202020;
   --my-name: linear-gradient(90deg, rgba(255, 255, 255, 1) 70%, rgba(255, 255, 255, 0) 120%);
   --toggle-shadow: 0 6px 6px 0 rgba(8, 8, 8, 0.9);
   --toggle-color: #353535;

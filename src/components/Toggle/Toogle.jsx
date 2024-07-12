@@ -1,5 +1,5 @@
 import "./Toggle.css";
-import { getImageUrl } from "../../utils";
+
 
 export const Toggle = ({ handleChange, isChecked}) => {
   return (

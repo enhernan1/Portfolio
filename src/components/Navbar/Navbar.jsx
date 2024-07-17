@@ -1,10 +1,12 @@
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect, useRef} from "react";
 import "./Navbar.css";
 import { Toggle } from "../Toggle/Toogle";
 export const Navbar = ({ isDark, setIsDark }) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [offset, setOffset] = useState(150);
+  const menuRef = useRef(null);
+
 
   const updateOffset = () => {
     if (window.innerWidth <= 1280 ) {
@@ -41,15 +43,23 @@ export const Navbar = ({ isDark, setIsDark }) => {
         setScrolled(false);
       }
     };
+    
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
 
     window.addEventListener('resize', updateOffset);
     window.addEventListener('hashchange', adjustScroll);
     window.addEventListener('scroll', handleScroll);
+    document.addEventListener('mousedown', handleClickOutside);
 
     return () => {
       window.removeEventListener('hashchange', adjustScroll);
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', updateOffset);
+      document.addEventListener('mousedown', handleClickOutside);
     };
   }, [offset]);
   
@@ -57,7 +67,7 @@ export const Navbar = ({ isDark, setIsDark }) => {
     <div className={`navbar-box ${scrolled ? 'scrolled' : ''}`} id="navbar">
       <nav className="navbar container"> 
         <a className="navbar__title" href="/">Enrique Hernandez</a>
-        <div className="navbar__menu">
+        <div className="navbar__menu" ref={menuRef}>
           <div className="navbar__menu-buttons" onClick={() => setMenuOpen(!menuOpen)}>
             {menuOpen ? ( 
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="navbar__menu-button">

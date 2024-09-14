@@ -1,10 +1,10 @@
 [
   {
     "title": "Book Management System",
-    "imageSrc": "projects/libr.png",
+    "imageSrc": "projects/monroe-catalog-screenshot.png",
     "description": "A Monroe County digital libray where you can find your perfect book.",
     "skills": ["React", "MongoDB", "Node", "Express"],
-    "demo": "https://library-prototype-api1.onrender.com/"
+    "demo": "https://monroe-catalog.onrender.com/"
   },
   {
     "title": "Sorting Visualizer",
